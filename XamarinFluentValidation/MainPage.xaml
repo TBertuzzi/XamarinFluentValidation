@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Padding="0,60,0,0"
+             x:Class="XamarinFluentValidation.MainPage">
+
+    <StackLayout>
+        <Label Text="Dados Pessoais" Margin="0,20,0,0"  > </Label>
+
+                 
+            <Entry Placeholder="Nome" Margin="0,20,0,0" 
+                   Text="{Binding Pessoa.Nome}">
+            </Entry>
+
+            <Entry Placeholder="E-mail" 
+                   Text="{Binding Pessoa.Email}">
+            </Entry>
+
+
+           <Picker x:Name="pEstado" SelectedItem="{Binding Pessoa.Estado.Value}" HorizontalOptions="FillAndExpand" Title="Estado">
+            <Picker.Items>
+                     <x:String>AC</x:String>
+                     <x:String>AL</x:String>
+                     <x:String>AP</x:String>
+                     <x:String>AM</x:String>
+                     <x:String>BA</x:String>
+                     <x:String>CE</x:String>
+                     <x:String>DF</x:String>
+                     <x:String>ES</x:String>
+                     <x:String>GO</x:String>
+                     <x:String>MA</x:String>
+                     <x:String>MT</x:String>
+                     <x:String>MS</x:String>
+                     <x:String>MG</x:String>
+                     <x:String>PA</x:String>
+                     <x:String>PB</x:String>
+                     <x:String>PR</x:String>
+                     <x:String>PE</x:String>
+                     <x:String>PI</x:String>
+                     <x:String>RJ</x:String>
+                     <x:String>RN</x:String>
+                     <x:String>RS</x:String>
+                     <x:String>RO</x:String>
+                     <x:String>RR</x:String>
+                     <x:String>SC</x:String>
+                     <x:String>SP</x:String>
+                     <x:String>SE</x:String>
+                     <x:String>TO</x:String>
+            </Picker.Items>
+           </Picker>
+
+            <Button Text="Validar" Command="{Binding ValidarCommand}" />
+
+    </StackLayout>
+</ContentPage>

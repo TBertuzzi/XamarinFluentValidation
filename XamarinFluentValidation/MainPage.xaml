@@ -17,7 +17,7 @@
             </Entry>
 
 
-           <Picker x:Name="pEstado" SelectedItem="{Binding Pessoa.Estado.Value}" HorizontalOptions="FillAndExpand" Title="Estado">
+           <Picker x:Name="pEstado" SelectedItem="{Binding Pessoa.Estado}" HorizontalOptions="FillAndExpand" Title="Estado">
             <Picker.Items>
                      <x:String>AC</x:String>
                      <x:String>AL</x:String>
